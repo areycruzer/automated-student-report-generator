@@ -1,0 +1,16 @@
+# Environment
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output reports
+data/output_reports/*
+!data/output_reports/.gitkeep
+
+# OS
+.DS_Store
