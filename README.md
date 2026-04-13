@@ -1,11 +1,18 @@
 # Automated Student Report Generation
 
-A Python-based Command Line Interface (CLI) application that automates the creation of professional student academic report cards. It reads student data from a CSV file, calculates grades and statistics, generates per-student performance bar charts, and compiles everything into individual PDF reports.
+A Python-based Command Line Interface (CLI) application that automates the creation of highly detailed, 3-page comprehensive student academic report cards. It reads extended student data from a CSV file, calculates grades and historical statistics, generates multiple performance charts, and compiles everything into professional PDF reports.
 
 ## Features
-- **Data Initialization & Processing**: Reads CSV data and computes Total Marks, Percentage, Letter Grade, and Class Rank using `pandas`. Gracefully handles missing values.
-- **Data Visualization**: Generates individual performance bar charts comparing Math, Physics, and Computer Science marks using `matplotlib` and `seaborn`.
-- **PDF Generation**: Compiles a professional "University Academic Report" for each student embedding their statistics and generated charts using `fpdf2`.
+- **Extensive Data Initialization & Processing**: Reads 30+ columns of CSV data including personal demographics, emergency contacts, administrative records, financial status (tuition, fines), and multi-semester historical GPA.
+- **Advanced Data Analytics**: Computes Current Semester GPA, specific subject percentages, Letter Grades, Class Ranks, and Attendance percentages using `pandas`. Gracefully handles missing values and data inconsistencies.
+- **Multi-Chart Visualizations**: Generates three distinct charts per student using `matplotlib` and `seaborn`:
+  - **Bar Chart**: Current semester subject performance assessment.
+  - **Line Chart**: Cumulative degree GPA trend across 5 semesters.
+  - **Pie Chart**: Class attendance distribution (attended vs. missed).
+- **3-Page PDF Generation**: Compiles a professional "University Academic Report" for each student using `fpdf2`.
+  - *Page 1*: Personal & Enrollment Information, Contact & Emergency Details, Academic Snapshot.
+  - *Page 2*: Detailed Academic Performance table and embedded performance graphics.
+  - *Page 3*: Extracurriculars, Campus Life, Attendance (with pie chart), and Administrative/Financial status (with dynamic color-coding for disciplinary actions).
 - **CLI Interface**: Simple command-line interface to specify input data and output directories.
 
 ## Project Structure
@@ -13,13 +20,13 @@ A Python-based Command Line Interface (CLI) application that automates the creat
 ```text
 student_report_automation/
 ├── data/
-│   ├── raw_students.csv        # Sample student data
-│   └── output_reports/         # Directory where generated PDFs are saved
+│   ├── raw_students.csv        # Comprehensive dataset (30+ columns)
+│   └── output_reports/         # Directory where generated 3-page PDFs are saved
 ├── src/
 │   ├── __init__.py
-│   ├── data_processor.py       # Pandas logic for grades and ranking
-│   ├── visualizer.py           # Matplotlib/Seaborn charting logic
-│   ├── pdf_generator.py        # FPDF PDF generation logic
+│   ├── data_processor.py       # Pandas logic for advanced metrics and ranking
+│   ├── visualizer.py           # Matplotlib/Seaborn logic for 3 distinct charts
+│   ├── pdf_generator.py        # FPDF layout engine for the 3-page report
 │   └── cli.py                  # Argparse CLI setup
 ├── requirements.txt            # Project dependencies
 ├── main.py                     # Application entry point
@@ -65,4 +72,4 @@ python main.py --input data/raw_students.csv --output data/output_reports/
 - `--output` (required): Path to the directory where the PDF reports will be saved.
 
 ## Output
-Once the script runs successfully, you will find individual PDF report cards inside the specified output directory (e.g., `data/output_reports/Report_101.pdf`). Each PDF contains the student's personal details, academic metrics, and an embedded bar chart of their performance.
+Once the script runs successfully, you will find individual PDF report cards inside the specified output directory (e.g., `data/output_reports/Report_101.pdf`). Each PDF contains the student's personal details, extended academic history, multiple graphical charts, and behavioral/administrative status.

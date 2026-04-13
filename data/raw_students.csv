@@ -1,6 +1,6 @@
-Roll_No,Name,Email,Math,Physics,Computer_Science
-101,Alice Smith,alice@example.com,95,88,92
-102,Bob Johnson,bob@example.com,75,80,
-103,Charlie Brown,charlie@example.com,82,90,85
-104,Diana Prince,diana@example.com,60,65,70
-105,Evan Wright,evan@example.com,99,95,98
+Roll_No,First_Name,Last_Name,DOB,Gender,Blood_Group,Phone,Email,Address,Guardian_Name,Guardian_Phone,Sem1_GPA,Sem2_GPA,Sem3_GPA,Sem4_GPA,Data_Structures,Algorithms,Operating_Systems,Database_Systems,Computer_Networks,Total_Classes,Attended_Classes,Clubs,Sports,Library_Fine,Tuition_Paid,Disciplinary_Action,Hostel_Block,Room_No
+101,Alice,Smith,2004-05-14,Female,O+,555-0101,alice.s@university.edu,"123 Apple St, NYC",Robert Smith,555-0102,8.5,8.8,9.0,9.2,95,88,92,89,94,150,142,Robotics Club,Basketball,0.00,Yes,None,Block A,101
+102,Bob,Johnson,2003-11-22,Male,A-,555-0201,bob.j@university.edu,"456 Banana Rd, LA",Mary Johnson,555-0202,7.2,7.5,7.0,7.8,75,80,68,72,74,150,110,Chess Club,Tennis,15.50,Yes,Late for exams,Block B,205
+103,Charlie,Brown,2004-01-30,Male,B+,555-0301,charlie.b@university.edu,"789 Cherry Blvd, SF",James Brown,555-0302,9.0,9.1,8.9,9.4,88,90,85,92,87,150,148,Debate Society,Swimming,0.00,Yes,None,Block A,110
+104,Diana,Prince,2004-08-15,Female,AB+,555-0401,diana.p@university.edu,"321 Date Ave, TX",Hippolyta Prince,555-0402,6.5,6.8,7.1,7.0,60,65,70,62,68,150,95,Drama Club,Track,5.00,No,Academic Warning,Block C,310
+105,Evan,Wright,2003-12-05,Male,O-,555-0501,evan.w@university.edu,"654 Elderberry Ln, WA",Thomas Wright,555-0502,9.5,9.6,9.8,9.7,99,95,98,96,97,150,150,AI Society,Football,0.00,Yes,None,Block B,405
