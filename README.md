@@ -1,5 +1,7 @@
 # Automated Student Report Generation
 
+![Report Screenshot](screenshot.png)
+
 A Python-based Command Line Interface (CLI) application that automates the creation of highly detailed, 3-page comprehensive student academic report cards. It reads extended student data from a CSV file, calculates grades and historical statistics, generates multiple performance charts, and compiles everything into professional PDF reports.
 
 ## Features
